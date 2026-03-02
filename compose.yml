@@ -1,11 +1,11 @@
 ---
 services:
   db:
-  image: mydockerhubbs/repo1:dbimage
-  ports:
-    - "3306:3306"
-  deploy:
-    replicas: 1
+    image: mydockerhubbs/repo1:dbimage
+    ports:
+      - "3306:3306"
+    deploy:
+      replicas: 1
   auth_service:
     image: mydockerhubbs/repo1:authimage
     ports:
